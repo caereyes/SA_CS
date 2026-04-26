@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Boutique</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Damion&family=Imperial+Script&family=Jim+Nightshade&display=swap" rel="stylesheet">
+
+<style>
+    body {
+    font-family: Damion;
+    margin: 0;
+    background-image: url("https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?semt=ais_hybrid&w=740&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background: linear-gradient(to right,#af7c74, #b78876, #b78876, 	#ffcfcf);
+    padding: 15px 30px;
+    text-align: center;
+    border: 3px solid #d9b7a5;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 { 
+  color: 	#ffaaaa;
+  font-size: 45px;
+  text-shadow: 2px 2px 5px #df949d;
+}
+
+h2 {
+    text-align: center;
+    color: 		#ffe1e1;
+     text-shadow: 2px 2px 5px #b3777e;
+      font-size: 30px;
+      letter-spacing: 3px;
+     
+}
+
+.nav-links a{
+    color: 			#fff9f9;
+    margin: 5px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #df949d;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: 	#ffeeee;
+}
+
+.container {
+    display: block;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.products {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: 	#ffcfcf;
+    color: #ff8fa0;
+    cursor: pointer;
+}
+
+.cart {
+    width: 700px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px auto;
+    color:#ffcfcf;
+    font-size: 25px;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    color:#ffcfcf;
+}
+
+.cart li {
+    margin: 5px 0;
+}
+
+.product-card {
+    width: 150px;
+    background: 	#fff9f9;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 97, 97, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: solid 2px 	#ff9d9d;
+}
+
+.product-card p {
+    margin: 5px 0;
+    color: 	#ff8fa0;
+}
+
+.product-card button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+    </style>
+
+</head>
+<header>
+    <div class="nav">
+  <h1>Carousel Boutique (˶˃ ᵕ ˂˶)</h1>
+    <div class= "nav-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="products">
+
+         <h2>Fashion Accesories! (Low Prices 20% off)</h2>
+        <div class="grid">
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/d7c1b1a51a76df2f909f9332e3150987.jpg" alt="Handbag">
+    <p>Handbag</p>
+    <p>₱150</p>
+    <button onclick="addItem('Handbag', 150)">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/c59f6c3667df2fb4abd7ca6997fc79df.jpg" alt="Doll Heels">
+    <p>Doll Heels</p>
+    <p>₱700</p>
+    <button onclick="addItem('Doll Heels', 700)">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/69a4afef8ffe3754d45e94eb019dabd6.jpg" alt="Kitty Shoes">
+    <p>Kitty Shoes</p>
+    <p>₱599</p>
+    <button onclick="addItem('Kitty Shoes', 599)">Add to Cart</button>
+</div>
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/6b6e799b549dcc968bdfbdc7997ce0df.jpg" alt="Shortcake Bracelet">
+    <p> Shortcake Bracelet</p>
+    <p>₱320</p>
+    <button onclick="addItem(' Shortcake Bracelet', 320)">Add to Cart</button>
+</div>
+
+   <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/f2ea5498709c6916f085e8eae015492e.jpg" alt="Eyeglasses">
+    <p>Pink Eyeglasses</p>
+    <p>₱100</p>
+    <button onclick="addItem('Pink Eyeglasses', 100)">Add to Cart</button>
+</div>
+
+</div>
+
+        <h2>Plushies!</h2>
+         <div class="grid">
+
+      <div class="product-card">
+    <img src="https://github.com/caereyes/SA-FINAL-YES/blob/main/7f92b7a989788abfe6b8f63942373de7.jpg?raw=true" alt="fuggler">
+    <p>Valentine's Fugg.</p>
+    <p>₱679</p>
+    <button onclick="addItem('Valentine's Fugg.', 679)">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+    <img src="https://github.com/caereyes/SA-FINAL-YES/blob/main/0d7ad08d3b3a9d91cdc6d2521f25f26f.jpg?raw=true" alt="strawberry">
+    <p>Strawberry</p>
+    <p>₱50</p>
+    <button onclick="addItem('Strawberry', 50)">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+    <img src="https://github.com/caereyes/SA-FINAL-YES/blob/main/82dcfc90929346bfe7fdc8af723c2ee6.jpg?raw=true" alt="Shrimp">
+    <p>Shrimp</p>
+    <p>₱50</p>
+    <button onclick="addItem('Shrimp', 50)">Add to Cart</button>
+</div>
+
+      <div class="product-card">
+    <img src="https://github.com/caereyes/SA-FINAL-YES/blob/main/a18f8cc95c62b9c2aebaecef7eb6621a.jpg?raw=true" alt="Blob Fish">
+    <p>Blob Fish</p>
+    <p>₱50</p>
+    <button onclick="addItem('Blob Fish', 50)">Add to Cart</button>
+</div>
+
+   <div class="product-card">
+    <img src="https://github.com/caereyes/SA-FINAL-YES/blob/main/a48e469e30d7dd31751b586fc7cbf83b.jpg?raw=true" alt="Octo">
+    <p>Octopus</p>
+    <p>₱50</p>
+    <button onclick="addItem('Octopus', 50)">Add to Cart</button>
+</div>
+
+</div>
+
+        <h2>Literature/Manga!</h2>
+         <div class="grid">
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/1.png" alt="pnp">
+     <p>Pride 'n Prejudice</p>
+    <p>₱1,199</p>
+    <button onclick="addItem('Pride 'n Prejudice', 1,199')">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/2.png" alt="lil women">
+      <p>Little Woman</p>
+    <p>₱1,000</p>
+    <button onclick="addItem('Little Woman', 1,000)">Add to Cart</button>
+</div>
+
+   
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/3.png" alt="nana">
+    <p>Nana</p>
+    <p>₱679</p>
+    <button onclick="addItem('Nana', 679)">Add to Cart</button>
+</div>
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/4.png" alt="Fancy Nancy">
+    <p>Fancy Nancy</p>
+    <p>₱800</p>
+    <button onclick="addItem('Fancy Nancy', 800)">Add to Cart</button>
+</div>
+
+   <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/5.png" alt="Saiki K">
+    <p>Saiki K</p>
+    <p>₱90,000</p>
+    <button onclick="addItem('Saiki K', 90,000)">Add to Cart</button>
+</div>
+
+</div>
+
+        <h2>Mugs/Glasses</h2>
+         <div class="grid">
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/usahana.png" alt="usahana">
+    <p>Usahana Mug</p>
+    <p>₱200</p>
+    <button onclick="addItem('Usahana Mug', 200)">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/smiski.png" alt="smiski">
+    <p>Smiski Mug</p>
+    <p>₱250</p>
+    <button onclick="addItem('Smiski Mug', 250)">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/nyan.png" alt="nyan cat">
+    <p>Nyancat Mug</p>
+    <p>₱200</p>
+    <button onclick="addItem('Nyancat Mug', 200)">Add to Cart</button>
+</div>
+
+      <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/nana.png" alt="lil strawberries">
+    <p>Strawberry Glass</p>
+    <p>₱150</p>
+    <button onclick="addItem('Strawberry Glass', 150)">Add to Cart</button>
+</div>
+
+   <div class="product-card">
+    <img src="https://raw.githubusercontent.com/caereyes/SA-FINAL-YES/main/paws.png" alt="paws">
+    <p>Paw Mugs</p>
+    <p>₱100</p>
+    <button onclick="addItem('Paw Mugs', 50)">Add to Cart</button>
+</div>
+
+</div>
+    </div>
+
+    <div class="cart">
+        <h2>Your Shopping Cart !!!</h2>
+        <ul id="cartList"></ul>
+        <p>Total: ₱<span id="total">0</span></p>
+
+        <form id="checkoutForm" method="POST" action="http://52.74.133.173/cs3/checkout.php">
+            <input type="text" name="cust_name" placeholder="Name" required>
+            <input type="text" name="cust_addr" placeholder="Address" required>
+            <input type="email" name="cust_email" placeholder="Email" required>
+
+            <input type="hidden" name="cust_order" id="cust_order">
+
+            <button type="submit">Checkout</button>
+        </form>
+    </div>
+
+</div>
+
+<script>
+  let cart = [];
+
+
+function addItem(name, price) {
+    cart.push({
+        prod_name: name,
+        prod_price: price
+    });
+    updateCart();
+}
+
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    updateCart();
+}
+
+
+function updateCart() {
+    const list = document.getElementById("cartList");
+    let total = 0;
+
+    list.innerHTML = "";
+
+    cart.forEach((item, index) => {
+        total += item.prod_price;
+
+        const li = document.createElement("li");
+        li.innerHTML = `
+            ${item.prod_name} - ₱${item.prod_price}
+            <button onclick="removeItem(${index})">X</button>
+        `;
+        list.appendChild(li);
+    });
+
+    document.getElementById("total").textContent = total;
+
+    
+    document.getElementById("cust_order").value = JSON.stringify(cart);
+}
+
+
+window.onload = function () {
+    document.getElementById("checkoutForm").addEventListener("submit", function (e) {
+
+        if (cart.length === 0) {
+            e.preventDefault();
+            alert("Your cart is empty!");
+            return;
+        }
+
+       
+        document.getElementById("cust_order").value = JSON.stringify(cart);
+
+        console.log("ORDER SENT:", document.getElementById("cust_order").value);
+    });
+};
+</script>
+
+</body>
+</html>
